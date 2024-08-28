@@ -19,15 +19,33 @@ header {
     align-items: center;
 }
 
-h1 {
+.index-heading {
     font-size: 400px;
-    margin-top: 200px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
-p {
+.index-paragraph {
     font-size: 150px;
     margin-top: 20px;
+}
+
+.about-heading {
+    font-size: 250px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.about-paragraph {
+    font-size: 90px;
+    margin-top: 20px;
+    color: antiquewhite;
+    text-align: center;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -69,6 +87,80 @@ main {
 }
 
 .boton-borde:hover {
-    background-color: rgb(218, 70, 181);
+    background-color: rgb(230, 120, 202);
     color: antiquewhite;
+}
+
+.address {
+    background-color: rgba(247, 210, 210, 0.7);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 6px 12px;
+    margin-top: auto;
+    width: 100%;
+}
+
+div.address p {
+    font-size: 65px; 
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgba(247, 210, 210, 0.7);
+    color: rgb(252, 249, 249);
+    width: 900px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h2 {
+    font-size: 90px;
+    margin: 10px 0;
+}
+
+.card-info p {
+    font-size: 55px;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#reservationMessage {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 300px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 150px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    max-width: 100%;
+    display: none;
+}
+
+#reservationMessage.show {
+    display: block;
 }

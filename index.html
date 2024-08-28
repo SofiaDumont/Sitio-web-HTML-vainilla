@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Sky Bar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,15 +15,20 @@
             </a>
         </div>
         <nav>
-            <a href="index.html" class="nav-link">Inicio</a>
-            <a href="about.html" class="nav-link">Acerca de</a>
+            <a href="index.html" class="nav-link">Inicio /</a>
+            <a href="about.html" class="nav-link">Acerca de /</a>
+            <a href="https://www.instagram.com/sofiadumontt?igsh=MWZhbmxqb2N4dHFnZA%3D%3D&utm_source=qr " class="nav-link">Instagram /</a>
+            <a href="https://www.facebook.com/" class="nav-link">Facebook</a>
         </nav>
     </header>
     <main>
-        <h1>THE SKY BAR</h1>
-        <p>MAKING PEOPLE HAPPY</p>
-        <a href="menu.html" class="boton-borde">MENÚ</a>
-
+        <h1 class="index-heading">THE SKY BAR</h1>
+        <p class="index-paragraph">"MAKING PEOPLE HAPPY"</p>
+        <button id="openReservationModal" class="boton-borde">¡RESERVA YA!</button>
+        <div id="reservationMessage" class="hidden">Reserva realizada. ¡Espera tu mensaje para la confirmacion y elección de fecha!</div>
     </main>
+    <div class="address">
+        <p>1204 Broadway, New York, NY 10001</p>
+    </div>
 </body>
 </html>
